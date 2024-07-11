@@ -27,6 +27,15 @@ body{
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
+    /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+    margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -54,10 +63,11 @@ body{
     display: inline-block;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-    margin-left: 4px;
-    transition: background-color 1s;
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
 }
 .btn--full:link, 
 .btn--full:visited {
@@ -77,6 +87,22 @@ body{
     color: #555;
 }
 
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
 .btn--outline:hover, 
 .btn--outline:active {
     background-color: #fdf2e9;
@@ -86,10 +112,20 @@ body{
 .hero-img {
     width: 100%;
 }
-
+/* HELPER/SETTING ClASSES */
 .margin-right-sm{
     margin-right: 1.6rem !important;
 }
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
 
 strong {
     font-weight: 500;
